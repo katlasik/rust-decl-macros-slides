@@ -1,0 +1,89 @@
+.image {
+    background-size: contain;
+}
+
+.slidev-layout {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+.col-left {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col-right {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.code-label {
+    position: relative;
+    font-size: 0.4rem;
+    top: 0.3rem;
+    z-index: 1;
+    left: 0.3rem;
+    color: darkslategray;
+}
+
+.slidev-layout {
+    font-size: 90%;
+}
+
+::view-transition-old(decl-title),
+::view-transition-new(decl-title),
+::view-transition-old(decl-subtitle),
+::view-transition-new(decl-subtitle)
+{
+    height: auto;
+    overflow: hidden;
+    object-fit: none;
+    object-position: left top;
+}
+
+.slidev-layout .hint {
+    font-size: 75%;
+    padding: 8px;
+}
+
+.three-cols {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.col-narrow {
+    flex: 1;
+}
+
+.col-wide {
+    flex: 3;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.macro-labels {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+
+.macro-labels > div {
+    background: linear-gradient(135deg, #f97316, #fb923c);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 8px rgba(249, 115, 22, 0.3);
+    width: fit-content;
+}
