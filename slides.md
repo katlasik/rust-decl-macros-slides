@@ -12,6 +12,7 @@ duration: 45min
 class: text-center
 addons:
   - fancy-arrow
+favicon: /favicon.png
 ---
 
 # Metaprogramming in Rust
@@ -189,7 +190,7 @@ layout: full
 <div class="col-wide">
 <span v-click="[7,8]" class="hint metavariable-repetition">repeated matcher</span>
 <span v-click="[6,7]" class="hint metavariable">metavariable name</span>
-<span v-click="[7,8]" class="hint delimiter">optional separator (e.g <code>,</code> or <code>|</code>)</span>
+<span v-click="[7,8]" class="hint delimiter">optional separator (e.g <code>,</code> or <code>;</code>)</span>
 
 <br>
 
@@ -231,8 +232,8 @@ my_vec!(item = "a", item = "b");
 </div>
 
 <div class="col-narrow flex-col">
-  <span v-click="[6,7]" class="hint metavariable-spec">fragment specifier (e.g&nbsp;<code>ident</code>, <code>expr</code>, <code>ty</code> or <code>lit</code>)</span>
   <span v-click="[4,5]" class="hint transcribers">&nbsp;&nbsp;transcribers</span>
+  <span v-click="[6,7]" class="hint metavariable-spec">fragment specifier (e.g&nbsp;<code>ident</code>, <code>expr</code>, <code>ty</code> or <code>lit</code>)</span>
   <span v-click="[8,9]" class="hint repetition">transcriber with repetition</span>
 
 
@@ -1868,14 +1869,11 @@ is an attempt to fix several long-standing issues with `macro_rules!`.
 layout: two-cols-header
 ---
 
-Macro 2.0 syntax looks very similar to macro rules:
-
-
 ::left::
 
 <div class="text-sm">
 
-**`macro_rules!`** (stable)
+**`macro_rules!`** 
 
 </div>
 
@@ -1898,7 +1896,7 @@ macro_rules! old_macro {
 
 <div class="text-sm">
 
-**`macro`** (unstable)
+**`macro`** 
 
 </div>
 
@@ -1924,3 +1922,15 @@ layout: full
 ---
 
 # Thank you!
+
+<div style="display: flex; align-items: center; gap: 2rem;">
+<div>
+
+Slides: https://katlasik.github.io/rust-decl-macros-slides
+
+<mdi-linkedin /> [krzysztof-atlasik](https://www.linkedin.com/in/krzysztof-atlasik/)
+
+</div>
+<img src="/qr.png" style="max-height: 300px;" />
+</div>
+
