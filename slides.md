@@ -233,7 +233,7 @@ my_vec!(item = "a", item = "b");
 
 <div class="col-narrow flex-col">
   <span v-click="[4,5]" class="hint transcribers">&nbsp;&nbsp;transcribers</span>
-  <span v-click="[6,7]" class="hint metavariable-spec">fragment specifier (e.g&nbsp;<code>ident</code>, <code>expr</code>, <code>ty</code> or <code>lit</code>)</span>
+  <span v-click="[6,7]" class="hint metavariable-spec">fragment specifier (e.g&nbsp;<code>ident</code>, <code>expr</code>, <code>stmt</code>, <code>ty</code> or <code>literal</code>)</span>
   <span v-click="[8,9]" class="hint repetition">transcriber with repetition</span>
 
 
